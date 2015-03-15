@@ -1,0 +1,95 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1C456B;
+}
+
+canvas {
+   display: block;
+    margin: 0.5em auto;
+    background: #fff;
+    border: 5px solid #6BAEED;
+    border-radius: 20px;
+}
+
+#leftArrow {
+  float: left;
+  top: 20px;
+  opacity: .5;
+  margin-right: 5px;
+  margin-top: 20px
+}
+
+#leftArrow:hover{
+  opacity: 1;
+}
+
+#rightArrow {
+  margin-left: 5px;
+  float: right;
+  opacity: .5;
+  margin-top: 20px
+}
+
+#rightArrow:hover{
+  opacity: 1;
+}
+
+#text{
+  width: 702px;
+  height: 80px;
+}
+
+#text[type = "text"]{
+  font-size: 72px;
+}
+
+#controls{
+    margin-left: auto;
+    margin-right: auto;
+    width: 921px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#sideControls{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+#color{
+  height: 84px;
+}
+
+#size{
+  height: 84px;
+  line-height: 84px;
+  -webkit-appearance: menulist-button;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+#exportButton{
+  height: 50px;
+  width: 100px;
+  font-size: 24px;
+  background-color: #6BAEED;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#exportCanvas{
+  position: absolute;
+  left: -999999999px;
+}

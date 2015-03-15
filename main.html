@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+
+	<title>Project 1 330</title>
+</head>
+<body>
+	<h1>Greating Cards From the Garden</h1>
+	<canvas width='1000' heiht='900'>
+		Get a real browser!
+	</canvas>
+	<canvas id='exportCanvas' width='1000' height='500'>
+		Get a real browser!
+	</canvas>
+	<section id = "controls">
+		<input type = "text" value = "Enter Text" id = "text"/>
+		<input type = "color" value = "" id = "color"/>
+		<select id = "size">
+			<option value="12">12</option>
+			<option value="14">14</option>
+			<option value="18">18</option>
+			<option value="22">22</option>
+			<option value="26">26</option>
+			<option value="30">30</option>
+			<option value="34">34</option>
+			<option value="38">38</option>
+			<option value="42">42</option>
+			<option value="46">46</option>
+			<option value="50">50</option>
+			<option value="54">54</option>
+			<option value="58">58</option>
+			<option value="62">62</option>
+			<option value="66">66</option>
+			<option value="70">70</option>
+		</select>
+
+		<img src = "image/leftArrow.png" id = "leftArrow" width = "50" hieght = "50">
+		<img src = "image/rightArrow.png" id = "rightArrow" width = "50" hieght = "50">
+		<div id = "sideControls">
+			<input id="exportButton" type="button" value="Export"/>
+		</div>
+	</section>
+
+
+	<div class = "modal fade" id = "myModal">
+		<div class = "modal-dialog">
+			<div class = "modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+					<h3>Welcome To Greating Cards In the Garden!</h3>
+				</div>
+				<div class = "modal-body">
+				<p>
+					<ol>
+						<li>Drag any of the Garden Buddies from below.</li>
+						<li>Drop them anywhere on the scene above.</li>
+						<li>Click the arrows below to change the scene.</li>
+						<li>Drag the text onto the scene:
+							<ul>
+								<li>Type in the text in the textbox below</li>
+								<li>Pick the color of the text using the color picker</li>
+								<li>Resize the text using the font size selector</li>
+							</ul>
+						</li>
+					</ol>
+				</p>
+
+				</div>
+				<div class = "modal-footer">
+					<button type = "button" class = "btn btn-primary" data-dismiss = "modal">Sounds Good</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="http://code.createjs.com/soundjs-0.5.2.min.js"></script>
+	<script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/drawHandler.js"></script>
+	<script src="js/loader.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
